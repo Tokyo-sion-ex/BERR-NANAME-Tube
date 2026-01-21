@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white dark:bg-youtube-dark text-black dark:text-white;
+  }
+}
+
+@layer components {
+  .sidebar-item {
+    @apply flex items-center gap-4 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-youtube-gray transition-colors;
+  }
+  
+  .video-card {
+    @apply cursor-pointer transition-transform hover:scale-[1.02] duration-200;
+  }
+  
+  .btn-primary {
+    @apply px-4 py-2 bg-youtube-red text-white rounded-lg hover:bg-red-600 transition-colors;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg 
+           bg-white dark:bg-youtube-gray focus:outline-none focus:ring-2 
+           focus:ring-youtube-red/50 transition-colors;
+  }
+}
